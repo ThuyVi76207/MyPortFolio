@@ -13,7 +13,7 @@ const HeroImg = () => {
             <div className="content">
                 <h1>Introduction</h1>
                 <p>Welcome to my website. My name is Vi. I'm a Senior Student with a major in information technology at Ho Chi Minh city Open University. Web programming is my favorite. 
-Currently I am trying to learn both frontend and backend so that I can be a fullstack web developer.</p>
+Currently I am trying to learn both frontend and backend so that I can be a fullstack web developer. </p>
                 
                 <div className="btn-content">
                     <Link to="/project" className="btn">Projects</Link>
