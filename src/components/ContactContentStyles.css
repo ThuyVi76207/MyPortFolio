@@ -1,0 +1,83 @@
+section#contact {
+    margin-top: 95px;
+}
+.container.contact_container {
+    width: 58%;
+    display: grid;
+    grid-template-columns: 30% 58%;
+    gap: 12%;
+    margin-left: 370px;
+    margin-bottom: 95px;
+}
+
+.contact_options {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.contact_option {
+    background: darkcyan;
+    padding: 1.2rem;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: var(--tranition);
+    border-radius: 10px;
+}
+.contact_option a {
+    margin-top: 0.7rem;
+    display: inline-block;
+    font-size: 15px;
+}
+h5 {
+    color: #fff;
+    font-size: 15px;
+}
+.contact-title{
+    color: #fff;
+    margin-bottom: 57px;
+    font-size: 27px;
+    margin-left: 370px;
+}
+
+/* ============== FORM ============= */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 1px solid #fff;
+    resize: none;
+    color: #fff;
+}
+/* ============= MEDIA QUERIES (MEDIUM DEVICES) ==========*/
+@media screen and (max-width: 1024px) {
+    .container.contact_container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        width: 52%;
+        display: grid;
+        margin-left: 200px;
+        margin-bottom: 95px;
+    }
+    .contact-title {
+        margin-left: 200px;
+    }
+}
+/* ============= MEDIA QUERIES (SMALL DEVICES) ==========*/
+@media screen and (max-width: 600px) {
+    .container.contact_container {
+        width: 52%;
+        display: grid;
+        margin-left: 90px;
+        margin-bottom: 95px;
+    }
+    .contact-title {
+        margin-left: 90px;
+    }
+}

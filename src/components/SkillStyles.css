@@ -1,0 +1,80 @@
+section#skill {
+    margin-top: 70px;
+}
+.skill-title {
+    color: #6c7287;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.skill_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin: 0 100px;
+}
+
+.skill_container > div {
+    background: rgba(77, 181, 255, 0.4);
+    padding: 2.4rem 5rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+}
+
+.skill_container > div:hover {
+    background: transparent;
+    border-color: rgb(129, 153, 249);
+    cursor: default;
+}
+.skill_details > div h4 {
+    font-size: 1.2rem;
+    padding-bottom: 3px;
+}
+
+.skill_container > div h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #13b1ac;
+}
+.skill_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+}
+.skill_details {
+    display: flex;
+    gap: 1rem;
+}
+.skill_details-icon {
+    margin-top: 6px;
+    color: #13b1ac;
+}
+.text-light {
+    color: #b1acac;
+}
+
+/* ============= MEDIA QUERIES (MEDIUM DEVICES) ==========*/
+@media screen and (max-width: 1024px) {
+    .skill_container {
+        grid-template-columns: 1fr;
+    }
+    .skill_container > div {
+        width: 80%;
+        padding: 2rem;
+        margin: 0 auto;
+    }
+    .skill_content {
+        padding: 1rem;
+    }
+}
+/* ============= MEDIA QUERIES (SMALL DEVICES) ==========*/
+@media screen and (max-width: 600px) {
+    .skill_container {
+        gap: 1rem;
+    }
+
+    .skill_container > div {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+}
