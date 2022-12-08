@@ -1,41 +1,58 @@
-import "./FooterStyles.css"
+import "./FooterStyles.css";
 import React from "react";
-import { FaCopyright, FaFacebook, FaGithub, FaHome, FaMailBulk, FaPhone } from "react-icons/fa";
-
-
 
 const Footer = () => {
     return (
         <div className="footer">
             <div className="footer-container">
                 <div className="left">
-                    <div className="location">
-                        <FaHome size={20} style={{color: "#fff", marginRight: "2rem"}}/>
+                    <div className="item-contact">
+                        <i className="text-[#fff] mr-2 text-[20px]">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </i>
+
                         <div>
                             <p>Nguyen Kiem Street, Ward 3, District Go Vap, Ho Chi Minh city.</p>
                         </div>
                     </div>
-                    <div className="phone">
-                        <h4>
-                            <FaPhone size={20} style={{color: "#fff", marginRight: "2rem"}}/>
-                            0859.500.644
-                        </h4>     
+                    <div className="item-contact">
+                        <i className="text-[#fff] mr-2 text-[20px]">
+                            <ion-icon name="call-outline"></ion-icon>
+                        </i>
+
+                        <div>
+                            <p>0859.500.644</p>
+                        </div>
                     </div>
-                    <div className="email">
-                        <h4>
-                            <FaMailBulk size={20} style={{color: "#fff", marginRight: "2rem"}}/>
-                            thuyvy76207@gmail.com
-                        </h4>     
+                    <div className="item-contact">
+                        <i className="text-[#fff] mr-2 text-[20px]">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </i>
+
+                        <div>
+                            <p>thuyvy76207@gmail.com</p>
+                        </div>
                     </div>
-                    
+
                 </div>
                 <div className="right">
                     <div className="social">
-                        <a href="https://www.facebook.com/ThuyVi76207"><FaFacebook size={30} style={{color: "#fff", marginRight: "1rem"}}/></a>
-                        <a href="https://github.com/ThuyVi76207"><FaGithub size={30} style={{color: "#fff", marginRight: "1rem"}}/></a>
-                        
-                        
-                        <div className="copyright-footer"><FaCopyright size={15} style={{color: "#fff", marginRight: "5px"}}/>2022 Copyright by Nguyen Thi Thuy Vi</div>
+                        <a href="https://www.facebook.com/ThuyVi76207" className="mr-1">
+                            <i className="text-[#fff] text-[35px]">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </i>
+                        </a>
+                        <a href="https://github.com/ThuyVi76207" className="mr-1">
+                            <i className="text-[#fff] text-[35px]">
+                                <ion-icon name="logo-github"></ion-icon>
+                            </i>
+                        </a>
+                        <a href="https://www.instagram.com/thuyvi_rua02/" className="mr-1">
+                            <i className="text-[#fff] text-[35px]">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </i>
+                        </a>
+                        <div className="copyright-footer"><trong>©</trong> {" "}2022 Copyright by Nguyen Thi Thuy Vi</div>
                     </div>
                 </div>
             </div>

@@ -1,6 +1,7 @@
 section#contact {
     margin-top: 95px;
 }
+
 .container.contact_container {
     width: 58%;
     display: grid;
@@ -15,6 +16,7 @@ section#contact {
     flex-direction: column;
     gap: 1.2rem;
 }
+
 .contact_option {
     background: darkcyan;
     padding: 1.2rem;
@@ -23,16 +25,19 @@ section#contact {
     transition: var(--tranition);
     border-radius: 10px;
 }
+
 .contact_option a {
     margin-top: 0.7rem;
     display: inline-block;
     font-size: 15px;
 }
+
 h5 {
     color: #fff;
     font-size: 15px;
 }
-.contact-title{
+
+.contact-title {
     color: #fff;
     margin-bottom: 57px;
     font-size: 27px;
@@ -55,29 +60,35 @@ input, textarea {
     resize: none;
     color: #fff;
 }
+
 /* ============= MEDIA QUERIES (MEDIUM DEVICES) ==========*/
+@media screen and (max-width: 1040px) {
+    .container.contact_container {
+        width: 80%;
+        margin: auto;
+        padding-bottom: 70px;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .container.contact_container {
         grid-template-columns: 1fr;
         gap: 2rem;
         width: 52%;
-        display: grid;
-        margin-left: 200px;
-        margin-bottom: 95px;
     }
+
     .contact-title {
-        margin-left: 200px;
+        margin-left: 237px;
     }
 }
+
 /* ============= MEDIA QUERIES (SMALL DEVICES) ==========*/
 @media screen and (max-width: 600px) {
     .container.contact_container {
-        width: 52%;
-        display: grid;
-        margin-left: 90px;
-        margin-bottom: 95px;
+        width: 70%;
     }
+
     .contact-title {
-        margin-left: 90px;
+        margin-left: 80px;
     }
 }
